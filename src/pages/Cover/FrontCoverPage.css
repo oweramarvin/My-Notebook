@@ -1,0 +1,58 @@
+.cover-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: 100%;
+    padding-top: 40px;             /* Adjust this value */
+  }
+  
+  
+  .cover-content {
+    padding: 60px 40px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  .top-row {
+    display: flex;
+    align-items: flex-start;  /* Align logo top with text top */
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .logo-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    align-items: start;
+  }
+  
+  .name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align left under the name */
+  }
+  
+  .name{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .underline {
+    width: 100%;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 4px 0 6px 0;
+  }
+  
+  .role {
+    font-size: 1.5rem;
+    font-weight: 20;
+    margin: 0;
+  }
+  
+  .tagline{
+    height: 20%;
+    text-align: start;
+  }

@@ -1,0 +1,71 @@
+.funfacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  align-items: center;
+}
+
+.fact-card {
+  width: 95%;
+  background: #fffef9;
+  border: 1px solid #e5dcc5;
+  border-left: 4px solid #c8b090;
+  border-radius: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.fact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #7c6f55;
+  margin-bottom: 8px;
+}
+
+.category {
+  font-weight: 600;
+  color: #6a5b3b;
+}
+
+.plus {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.fact-card.open .plus {
+  transform: rotate(180deg);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3d3524;
+}
+
+.description-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.fact-card.open .description-wrapper {
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #5a5240;
+  line-height: 1.4;
+}

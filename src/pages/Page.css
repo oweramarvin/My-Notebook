@@ -1,0 +1,244 @@
+.book-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff493;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.book-wrapper.center-first-page > div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative; /* ensure ::before is relative to page */
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  background: linear-gradient(
+    to right,
+    rgba(200, 200, 200, 0.15) 0%,
+    transparent 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-image: repeating-radial-gradient(
+    circle at center,
+    transparent 0px,
+    transparent 20px,
+    rgba(150, 150, 150, 0.5) 20px,
+    rgba(150, 150, 150, 0.5) 22px,
+    transparent 22px,
+    transparent 40px
+  );
+  background-size: 4px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cover {
+  background-color: #5d4037;
+  background-image: 
+    radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0,0,0,0.1) 0%, transparent 50%);
+  background-size: 3px 3px, 100% 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cover-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cover-content .subtitle {
+  font-size: 1.5rem;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.cover-content .tagline {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.notebook-page {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    #e0e0e0 31px,
+    #e0e0e0 32px
+  );
+  background-position: 0 40px;
+  padding: 40px;
+  overflow-y: auto;
+  color: #333;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.page-content h2 {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  color: #5d4037;
+  border-bottom: 2px solid #5d4037;
+  padding-bottom: 10px;
+}
+
+.page-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0 0 15px 0;
+}
+
+.page-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-content li {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.page-content li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #5d4037;
+  font-weight: bold;
+}
+
+.project-item {
+  margin-bottom: 25px;
+}
+
+.project-item h3 {
+  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #5d4037;
+}
+
+.project-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cover-content h1 {
+    font-size: 2rem;
+  }
+
+  .cover-content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .cover-content .tagline {
+    font-size: 1rem;
+  }
+
+  .notebook-page {
+    padding: 30px 20px;
+  }
+
+  .page-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cover {
+    padding: 30px 20px;
+  }
+
+  .cover-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .cover-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .notebook-page {
+    padding: 20px 15px;
+  }
+
+  .page-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .page-content p,
+  .page-content li {
+    font-size: 0.9rem;
+  }
+}
+
+
+.page, 
+.page * {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y; /* still allow vertical scroll */
+}
+
+.page-indicator {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}

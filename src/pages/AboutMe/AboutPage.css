@@ -1,0 +1,70 @@
+
+
+.more-section {
+    margin-top: 2rem;
+  }
+  
+  .more-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 1;
+  }
+  
+  .more-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+    .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #5a4033;
+    position: relative;
+  }
+  
+  .more-item {
+    background: none;
+    border: #ffb451;
+    color: rgb(53, 53, 53);
+    border-bottom: 1px solid #c9b08a; /* soft brown line */
+    padding: 0.4rem 0;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 0.2s ease;
+    padding-left: 20px;
+  }
+
+  .more-item:hover::before {
+    content: "→ "; /* You can change this to • or › */
+    opacity: 1;
+}
+  
+  .more-item:hover {
+    opacity: 1;
+    font-size: 1.2rem;
+    transform: translateX(10px);
+    font-weight: bold;
+  }
+
+  .button-outline {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: transparent;
+    color: #3e2f1c;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border: 2px solid #bfa98b;
+    transition: 0.25s ease;
+  }
+  
+  .button-outline:hover {
+    background: #f5eee1;
+    
+  }
+  
+  

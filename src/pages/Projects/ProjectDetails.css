@@ -1,0 +1,71 @@
+.project-details-wrapper {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #4b3f2f;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.project-description {
+  font-size: 15px;
+  line-height: 1.5rem;
+  opacity: 0.85;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.download-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.download-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.github-btn {
+  background: #111;
+  color: white;
+}
+
+.github-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}

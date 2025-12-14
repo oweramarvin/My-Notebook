@@ -1,0 +1,82 @@
+/* Subtitle */
+.nth-subtext {
+  text-align: center;
+  font-size: 14px;
+  color: #6a4a2f;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Timeline Grid */
+.nth-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 35px;
+}
+
+/* Card — Smaller, Cleaner */
+.nth-card {
+  background: #fffdf8;
+  border: 1px solid #e8d9c4;
+  padding: 14px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Hover (minimal lift) */
+.nth-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.1);
+  border-color: #d8c0a8;
+  background: #fffaf2;
+}
+
+/* Title + Status layout */
+.nth-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.nth-card h3 {
+  font-size: 15px;
+  margin: 0;
+  color: #4b2e12;
+}
+
+/* Status Tags */
+.status-tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Status Colors */
+.status-tag.inprogress {
+  background: #ffe0c2;
+  color: #ff7b00;
+}
+
+.status-tag.planned {
+  background: #e7ecff;
+  color: #5465ff;
+}
+
+.status-tag.upcoming {
+  background: #e1f5e7;
+  color: #1a7f38;
+}
+
+/* Description */
+.nth-card p {
+  font-size: 13px;
+  color: #5f4322;
+  opacity: 0.9;
+  margin: 0;
+  line-height: 1.35rem;
+}

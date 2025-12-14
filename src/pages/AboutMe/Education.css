@@ -1,0 +1,86 @@
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.edu-timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #c8b090; /* notebook brown */
+  opacity: 0.6;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.edu-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #8b6f47; /* darker brown */
+  border: 3px solid #f3e4d4;
+  flex-shrink: 0;
+}
+
+.edu-content {
+  background: #fff9f2;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border-left: 4px solid #c8b090;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edu-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+}
+
+.edu-level {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4b3825;
+  margin: 0;
+}
+
+.edu-school {
+  font-size: 18px;
+  color: #4b3825;
+  margin: 0;
+  font-weight: bold;
+}
+
+.edu-year {
+  font-size: 13px;
+  color: #625445;
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Same fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

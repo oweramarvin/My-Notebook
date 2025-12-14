@@ -1,0 +1,38 @@
+/* Bottom-left info icon */
+.info-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 4px 7px;
+  font-size: 12px;
+  border-radius: 6px;
+  z-index: 20;
+}
+
+/* Container for bottom buttons — not absolute */
+.mobile-controls {
+  margin-top: 20px;  /* <-- pushes below the flipbook */
+  text-align: center;
+}
+
+/* Buttons below */
+.nav-bottom-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.nav-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #c7b198;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

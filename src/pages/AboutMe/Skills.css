@@ -1,0 +1,60 @@
+.skills-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4b3e2b;
+  background: #fff8f0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skill-group {
+  margin-bottom: 2rem;
+}
+
+.skill-group h3 {
+  font-size: 1.2rem;
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #c4a27f;
+  padding-bottom: 0.2rem;
+  text-align: left;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.skill-name {
+  width: 200px;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.skill-bar {
+  flex: 1;
+  height: 10px;
+  background: #e0d6c3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 0.5rem;
+}
+
+.skill-level {
+  height: 100%;
+  background: #8b5e3c;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+.skill-percent {
+  width: 40px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #6b4f3a;
+}
