@@ -15,18 +15,12 @@
   
   .top-row {
     display: flex;
-    align-items: flex-start;  /* Align logo top with text top */
+    align-items: flex-start; 
     justify-content: space-evenly;
     gap: 20px;
   }
   
-  .logo-box img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    align-items: start;
-  }
-  
+
   .name-box {
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ body,
 html{
   height: 100dvh;
   width: 100dvw;
-  background: rgb(255, 255, 166);
+  background: #fff493;
   overflow: hidden;
   display: flex;
   justify-content: center;

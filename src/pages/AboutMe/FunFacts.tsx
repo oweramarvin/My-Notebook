@@ -26,16 +26,16 @@ const facts: Fact[] = [
   {
     id: 3,
     category: "Birth Story",
-    title: "I was born in Pagsanjan, Laguna",
+    title: "Santa Cruz, Laguna is not my Birth Place",
     description:
-      "All my records, including my birth certificate, say I was born in Santa Cruz, Laguna. The truth is, I first tried to be born at home in Santa Cruz, but there were complications. My mother had to go to a hospital, and since I still couldn’t come out, they transferred her to a hospital in Unson, Pagsanjan, where I was finally born.",
+      "All my records, including my birth certificate, say I was born in Santa Cruz, Laguna. The truth is, I first tried to be born at home in Santa Cruz, but there were complications. My mother had to go to a hospital, and since I still couldn’t come out, they transferred her to another hospital in Unson, Pagsanjan, where I was finally born.",
   },
   {
     id: 4,
     category: "Childhood Dream",
-    title: "My first dream job is to make money",
+    title: "My first dream job is",
     description:
-      "As a kid, I thought my dream job was simply to make money. I imagined that by doing this, I would eventually become rich and have everything I wanted.",
+      "As a kid, my dream job was simply to make money. I imagined that by doing this, I would eventually become rich and have everything I wanted.",
   },
   {
     id: 5,

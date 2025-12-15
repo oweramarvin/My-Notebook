@@ -18,7 +18,6 @@ export default function AboutPage({
 }: AboutPageProps) {
   const isMobile = IsMobile();
 
-  // I need to do this because I want to auto next page if the button is clicked on mobile
   const handleClickButton = (page: string) => {
     setSelectedPage(page);
 

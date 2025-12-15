@@ -27,35 +27,35 @@ export default function ContactPage() {
         <div className="contact-socials">
           <a
             className="social-circle"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/marvinowera/"
             target="_blank"
           >
             <FaLinkedin />
           </a>
           <a
             className="social-circle"
-            href="https://instagram.com"
+            href="https://www.instagram.com/oueramavuin/#"
             target="_blank"
           >
             <FaInstagram />
           </a>
           <a
             className="social-circle"
-            href="https://facebook.com"
+            href="https://www.facebook.com/marvin.owera/"
             target="_blank"
           >
             <FaFacebook />
           </a>
           <a
             className="social-circle"
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@marbino"
             target="_blank"
           >
             <FaTiktok />
           </a>
           <a
             className="social-circle"
-            href="https://github.com"
+            href="https://github.com/oweramarvin"
             target="_blank"
           >
             <FaGithub />

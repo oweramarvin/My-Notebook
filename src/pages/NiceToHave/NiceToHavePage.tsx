@@ -4,13 +4,20 @@ const niceToHaveList = [
   {
     title: "CRUD System",
     description:
-      "This portfolio should allow adding, deleting, customizing, and updating pages.",
+      "This portfolio will soon allow adding, updating, deleting, customizing, and updating pages and contents.",
+    status: "In Progress",
+  },
+  {
+    title: "User Friendly",
+    description:
+      "This portfolio has a lot of issue mostly in mobile, it's hard to swipe. Soon I'll fix it",
     status: "In Progress",
   },
   {
     title: "Personal Login",
-    description: "Admin login so I can edit the portfolio without coding.",
-    status: "Planned",
+    description:
+      "Admin login so I can customize this portfolio without coding.",
+    status: "In Progress",
   },
   {
     title: "Template Builder",
@@ -19,22 +26,23 @@ const niceToHaveList = [
   },
   {
     title: "Media Gallery",
-    description: "Photos and videos organized neatly into albums.",
+    description:
+      "I will add my or user photos and videos organized neatly into albums.",
     status: "Upcoming",
   },
   {
     title: "Journal",
     description: "Daily thoughts, reflections, and memories.",
-    status: "Upcoming",
+    status: "Planned",
   },
   {
     title: "Timeline Chart",
-    description: "Life milestones visualized from 2000 to present.",
-    status: "Upcoming",
+    description: "Life milestones visualized from birth to present.",
+    status: "Planned",
   },
   {
     title: "References",
-    description: "People who’ve inspired and supported me.",
+    description: "People you can contact for my reference.",
     status: "Upcoming",
   },
   {
@@ -46,17 +54,6 @@ const niceToHaveList = [
     title: "Achievements",
     description: "Certifications, awards, and major career milestones.",
     status: "Upcoming",
-  },
-  {
-    title: "Skill Graph",
-    description: "Visual representation of my self-assessed skills.",
-    status: "Upcoming",
-  },
-  {
-    title: "API Projects",
-    description:
-      "External integrations to make the portfolio dynamic and alive.",
-    status: "Planned",
   },
 ];
 

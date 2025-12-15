@@ -41,28 +41,30 @@
 .contact-socials {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px; /* more spacing for clean look */
   margin-bottom: 20px;
 }
 
-/* Brown circle icons */
+/* Minimalist circle icons */
 .social-circle {
   width: 30px;
   height: 30px;
-  background: #895c34; /* brown theme */
+  border: 2px solid #895c34; /* subtle brown border */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 1.4rem;
-  
-  transition: 0.2s ease;
+  color: #895c34; /* brown icon color */
+  font-size: 1.2rem;
+  background: transparent; /* minimalist */
+  transition: all 0.3s ease;
 }
 
 .social-circle:hover {
-  transform: scale(1.12);
-  background: #8c6547;
+  background: #895c34; /* brown background on hover */
+  color: #fff; /* icon turns white */
+  transform: translateY(-3px); /* subtle lift */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* soft shadow */
 }
 
 /* CONTACT BUTTON */

@@ -11,6 +11,8 @@ import NiceToHavePage from "./NiceToHave/NiceToHavePage";
 import BackCoverPage from "./Cover/BackCoverPage";
 import MobileSwipeButton from "../components/MobileSwipeButton";
 import IsMobile from "../components/IsMobile";
+import { projects } from "./Projects/ProjectsPage";
+import type { Project } from "../types/Project";
 
 function Page() {
   //const HTMLFlipBook = HTMLFlipBookOrig as any;
@@ -21,14 +23,7 @@ function Page() {
   const [selectedPage, setSelectedPage] = useState<string>("Education"); // My default selected page
   const [currentPage, setCurrentPage] = useState(0);
 
-  const myProject = {
-    title: "Inventory System",
-    videoUrl: "/src/assets/videos/inventory-demo.mp4",
-    description: "A full desktop inventory app built in C#...",
-
-    downloadUrl: "/src/assets/downloads/inventory.zip",
-    githubUrl: "https://github.com/username/inventory-system",
-  };
+  const [selectedProject, setSelectedProject] = useState<Project>(projects[0]);
 
   useEffect(() => {
     const updateSize = () => {
@@ -56,16 +51,10 @@ function Page() {
       <AboutPageContent page={selectedPage} />
     </div>,
     <div>
-      <ProjectsPage />
+      <ProjectsPage setSelectedProject={setSelectedProject} bookRef={bookRef} />
     </div>,
     <div>
-      <ProjectDetails
-        title={myProject.title}
-        videoUrl={myProject.videoUrl}
-        description={myProject.description}
-        downloadUrl={myProject.downloadUrl}
-        githubUrl={myProject.githubUrl}
-      />
+      <ProjectDetails {...selectedProject} />
     </div>,
     <div>
       <ContactPage />
@@ -92,13 +81,13 @@ function Page() {
           width={bookSize.width}
           height={bookSize.height}
           drawShadow={true}
-          flippingTime={500}
+          flippingTime={1000}
           usePortrait={window.innerWidth <= 768}
           startZIndex={0}
           autoSize={false}
           clickEventForward={false}
           useMouseEvents={true}
-          swipeDistance={0.01}
+          swipeDistance={100}
           showPageCorners={true}
           disableFlipByClick={true}
           showCover={true}
